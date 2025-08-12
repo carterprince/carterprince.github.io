@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gigapixel Image Viewer</title>
+    <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scrollbars */
+        }
+        #viewer-div {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="viewer-div"></div>
+    <script type="text/javascript">
+        var viewer = OpenSeadragon({
+            id: "viewer-div",
+            prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+
+            // *** IMPORTANT: Change this to your .dzi file! ***
+            tileSources: "my_output_folder.dzi"
+        });
+    </script>
+</body>
+</html>
