@@ -23,9 +23,11 @@
         var viewer = OpenSeadragon({
             id: "viewer-div",
             prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+            tileSources: "my_output_folder.dzi",
 
-            // *** IMPORTANT: Change this to your .dzi file! ***
-            tileSources: "my_output_folder.dzi"
+            maxZoomPixelRatio: 5,
+            visibilityRatio: 0.1,
+            constrainDuringPan: false
         });
     </script>
 </body>
