@@ -115,9 +115,14 @@ section {
     padding-left: 5px;
 }
 
-.job li, .skills-list li {
+.job li, .skills-list li, #education li {
     margin-bottom: 8px;
     color: var(--text-secondary);
+}
+
+#education ul {
+    list-style-position: inside;
+    padding-left: 20px;
 }
 
 .two-col-section {
